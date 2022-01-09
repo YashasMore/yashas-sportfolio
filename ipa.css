@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+
+}
+header{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+ul li a{
+    padding:0 20px;
+    text-decoration: none;
+    color: #3a3a3a;
+    display: inline-block;
+}
+li a::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    background: #7676d3;
+    transition:all .5s;
+}
+
+li a:hover::after{
+    width: 100%;
+}
+main{
+    display: flex;
+    border:1px solid red;
+    height: calc(100vh - 100px);
+    align-items: center;
+    justify-content: center;
+}
+.tcs{
+    padding: 5px 10px;
+    background: #7676d3;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+.pythonmcq{
+    width: 200px;
+    height: 80px;
+    padding: 27px 38px;
+    margin: 30px 30px 30px 30px;
+    background: #7676d3;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.UI{
+    width: 200px;
+    height: 80px;
+    padding: 27px 64px;
+    margin: 30px 30px 30px 30px;
+    background: #7676d3;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.mysql{
+    width: 200px;
+    height: 80px;
+    padding: 27px 44px;
+    margin: 30px 30px 30px 30px;
+    background: #7676d3;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.kyt{
+    width: 200px;
+    height: 80px;
+    padding: 27px 58px;
+    margin: 30px 30px 30px 30px;
+    background: #7676d3;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.bizzskill{
+    width: 200px;
+    height: 80px;
+    padding: 27px 34px;
+    margin: 30px 30px 30px 30px;
+    background: #7676d3;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.codingpython{
+    width: 200px;
+    height: 80px;
+    padding: 27px 30px;
+    margin: 30px 30px 30px 30px;
+    background: #7676d3;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
