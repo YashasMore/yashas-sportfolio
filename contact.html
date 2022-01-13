@@ -22,37 +22,23 @@
         </nav>
     </header>
     <main>
-        <form action="mailto:moreyashas084@gmail.com" method="" enctype="text/plain">
-            <br>
-            <fieldset>
-                <legend><div class="contact">Contact Us</div></legend>
-                <div class="cnt" >
-                    <div><label class="Name"for="Name">Name: </label> <input id="n" type="text" placeholder="eg: Sam" name="" id=""></div>
-                    <div><label class="Phone" for="Phone">Phone: </label> <input id="no" type="number" placeholder="1230485884" name="" id=""></div>
-                </div>
+        <div class="contact-form">
+            <div class="contact-title">
+                <p>Contact Me</p>
+            </div>
+            <form action="" id="contactform" method="post">
+                <input type="text" name="name" class="form-control" placeholder="Name" required>
                 <br>
-                <div class="boxch">
-                    <div class="check">
-                        <div class="frst">
-                            <label for="">Male</label>
-                            <input type="checkbox" value="Male">
-                        </div>
-                        <div class="sec">
-                            <label for="">Female</label>
-                            <input type="checkbox" value="Female">
-                        </div>
+                <input name="email" type="email" class="form-control" placeholder="Email" required>
+                <br>
+    
+                    <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
+                    <div class="submit1">
+                        <input type="submit" class="submit" value="Send">
                     </div>
-                </div>
-                <br>
-                <div class="mess">
-                    <textarea name="Message" id="" cols="30" rows="10">Message</textarea>
-                </div>
-                <br>
-                <div class="sub">
-                    <input type="submit" name="Submit" id="su" value="Submit">
-                </div>
-            </fieldset>
-        </form>
+                  
+            </form>
+        </div>
     </main>
 </body>
 </html>
