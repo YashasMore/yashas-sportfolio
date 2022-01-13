@@ -176,11 +176,12 @@ fieldset{
     .content-left{
         position: absolute;
         top: 41%;
+        left: 24%;
     }    
     .content-right{
         position: absolute;
         top: 17%;
-        left: 10%;
+        left: 25;
     }
     .hero-img{
         max-width: 150px;
@@ -191,4 +192,13 @@ fieldset{
     .content-left{
         width: 67%;
     }
+    
+    .log{
+        display: none;
+
+    }
+    .logo{
+        display: none;
+    }
+
 }
