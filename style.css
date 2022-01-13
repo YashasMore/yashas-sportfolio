@@ -172,3 +172,23 @@ fieldset{
     margin: 0px 0px 0px 30px;
 }
 
+@media  only screen and (max-width:700px){
+    .content-left{
+        position: absolute;
+        top: 41%;
+    }    
+    .content-right{
+        position: absolute;
+        top: 17%;
+        left: 10%;
+    }
+    .hero-img{
+        max-width: 150px;
+    }
+    .content-left h1{
+        font-size: 38px;
+    }
+    .content-left{
+        width: 67%;
+    }
+}
