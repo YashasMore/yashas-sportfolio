@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
@@ -22,7 +23,7 @@
         </nav>
     </header>
     <main>
-        <div class="content-right">
+        <div class="content-right" data-aos="fade-right">
             <img src="Pro.png" alt="Profile image" class="hero-img2">
             <div class="social">
                 <div class="linkedin"><a href="https://www.linkedin.com/in/yashas-more-aab3651ab?originalSubdomain=in"><img src="linkedin.png" alt="" width="25px"></a></div>
@@ -31,7 +32,7 @@
                 <div class="facebook"><a href="https://www.facebook.com/yashas.more"><img src="face.png" alt="" width="25px"></a></div>
             </div>
         </div>
-        <div class="content-left">
+        <div class="content-left" data-aos="fade-left">
             <h3>Welcome 👨‍💻</h3>
             <p>My name is Yashas Currently I am pursuing BE in Electronics from Mumbai University I am passionate about creating and designing wesites. My motivation and love for developement as well as good design have brought me to where I am today. Everyday I try to keep up with the latest technology trends </p>
             
@@ -39,6 +40,11 @@
         </div>
        
     </main>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
 </body>
 </html>
