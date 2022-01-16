@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IPA Notes</title>
     <link rel="stylesheet" href="ipa.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
@@ -22,33 +23,52 @@
         </nav>
     </header>
     <main>
-        <table>
-            <tr>
-                <td>
-                    <a style="text-decoration: none;" href="Python (TCS).pdf"><div class="pythonmcq"><p>Python-MCQs</p></div></a>
-                </td>
-                <td>
-                    <a style="text-decoration: none;" href="Know Your Tcs.pdf"><div class="kyt"><p>KYT-MCQs</p></div></a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a style="text-decoration: none;" href=""><div class="UI"><p>UI-MCQs</p></div></a>
-                </td>
-                <td>
-                    <a style="text-decoration: none;" href="BizzSkills TCS.pdf"><div class="bizzskill"><p>BizzSkill-MQCs</p></div></a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a style="text-decoration: none;" href=""><div class="mysql"><p>MySql-MCQs</p></div></a>
-                </td>
-                <td>
-                    <a style="text-decoration: none;" href="Pyhon Coding Questions.pdf"><div class="codingpython"><p>Python-Coding</p></div></a>
-                </td>
-            </tr>
-        </table>
+         <div class="box">
+            <div class="container">
+                <a href="Python (TCS).pdf">
+                    <div class="test" data-aos="fade-right">
+                       <p>Python-Mcqs</p>
+                    </div>
+                </a>
+                <a href="Know Your Tcs.pdf">
+                    <div class="test" data-aos="fade-right">
+                        <p>KYT</p>
+                    </div>
+                </a>
+                <a href="BizzSkills TCS.pdf">
+                    <div class="test" data-aos="fade-right">
+                        <p>BizzSkills</p>
+                    </div>
+                </a>
+            </div>
+            <div class="container1">
+                <a href="#">
+                    <div class="test" data-aos="fade-left">
+                        <p>MySql</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="test" data-aos="fade-left">
+                        <p>UI</p>
+                    </div>
+                </a>
+                <a href="Pyhon Coding Questions.pdf">
+                    <div class="test1" data-aos="fade-left">
+                        <a href=""><p>Python-Coding</p></a>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="bottom">
+
+        </div>
     </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
 </body>
 </html>
 
