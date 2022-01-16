@@ -55,94 +55,51 @@ main{
     text-transform: uppercase;
     border-radius: 30px;
 }
-.pythonmcq{
-    width: 200px;
-    height: 80px;
-    padding: 27px 38px;
-    margin: 30px 30px 30px 30px;
-    background: #7676d3;
-    color: #fff;
-    outline: none;
-    border: none;
-    font-weight: 700;
-    text-transform: uppercase;
-    border-radius: 15px;
-    text-decoration: none;
+
+.container{
+    margin-right: 24px
 }
 
-.UI{
-    width: 200px;
-    height: 80px;
-    padding: 27px 64px;
-    margin: 30px 30px 30px 30px;
-    background: #7676d3;
-    color: #fff;
-    outline: none;
-    border: none;
-    font-weight: 700;
-    text-transform: uppercase;
-    border-radius: 15px;
-    text-decoration: none;
+.box{
+    display: flex;
+    justify-content: center;
 }
 
-.mysql{
-    width: 200px;
-    height: 80px;
-    padding: 27px 44px;
-    margin: 30px 30px 30px 30px;
-    background: #7676d3;
-    color: #fff;
-    outline: none;
-    border: none;
-    font-weight: 700;
-    text-transform: uppercase;
-    border-radius: 15px;
-    text-decoration: none;
+.test{
+    width: 225px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    background-color: #7676d3;
+    border-radius: 20px;
+    
 }
 
-.kyt{
-    width: 200px;
-    height: 80px;
-    padding: 27px 58px;
-    margin: 30px 30px 30px 30px;
-    background: #7676d3;
-    color: #fff;
-    outline: none;
-    border: none;
-    font-weight: 700;
-    text-transform: uppercase;
-    border-radius: 15px;
+a{
     text-decoration: none;
+    color: black;
 }
 
-.bizzskill{
-    width: 200px;
-    height: 80px;
-    padding: 27px 34px;
-    margin: 30px 30px 30px 30px;
-    background: #7676d3;
-    color: #fff;
-    outline: none;
-    border: none;
-    font-weight: 700;
-    text-transform: uppercase;
-    border-radius: 15px;
-    text-decoration: none;
+.test:hover{
+    background-color: coral;
 }
 
-.codingpython{
-    width: 200px;
-    height: 80px;
-    padding: 27px 30px;
-    margin: 30px 30px 30px 30px;
-    background: #7676d3;
-    color: #fff;
-    outline: none;
-    border: none;
-    font-weight: 700;
-    text-transform: uppercase;
-    border-radius: 15px;
-    text-decoration: none;
+.test1{
+    width: 225px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    background-color: #7676d3;
+    border-radius: 20px;
+}
+
+.test1:hover{
+    background-color: coral;
 }
 
 @media only screen and (max-width:700px){
@@ -154,6 +111,26 @@ main{
 
     .logo{
         display: none;
+    }
+    
+    .container1{
+        position: absolute;
+        top: 315px;
+        left: auto;
+        margin-right: 24px;
+    }
+
+    .box{
+        position: absolute;
+        top: 122px;
+    }
+
+    .bottom{
+        margin-bottom: 29px;
+        position: absolute;
+        width: 300px;
+        height: 183px;
+        top: 796px;
     }
 }
 
