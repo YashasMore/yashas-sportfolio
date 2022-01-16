@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
@@ -25,16 +26,22 @@
         </nav>
     </header>
     <main>
-        <div class="content-left">
+        <div class="content-left" data-aos="fade-right">
             <h5>HI THERE 👋 I'M</h5>
             <h1>Yashas</h1>
             <h2>Web Designer & Developer</h2>
             <p>I am a Developer based in Mumbai, India focused on creating interactive digital solution on the web for a better user experience</p>
             <a href="Yashas's Resume.pdf" class="cta" >Resume</a>
         </div>
-        <div class="content-right">
+        <div class="content-right" data-aos="fade-left">
             <img src="Pro.png" alt="Profile image" class="hero-img">
         </div>
     </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
 </body>
 </html>
