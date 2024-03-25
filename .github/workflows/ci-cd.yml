@@ -18,4 +18,5 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         run: |
-          echo "Secret value: $MY_SECRET"
+          echo "Secret value: $AWS_ACCESS_KEY_ID"
+          echo "Secret value key: $AWS_SECRET_ACCESS_KEY"
