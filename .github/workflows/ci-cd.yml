@@ -22,4 +22,4 @@ jobs:
 
 
       - name: Upload files to S3
-        run: aws s3 sync .$GITHUB_WORKSPACE/main s3://my-web-bucket-01 --delete
+        run: aws s3 sync $GITHUB_WORKSPACE/main s3://my-web-bucket-01 --delete
