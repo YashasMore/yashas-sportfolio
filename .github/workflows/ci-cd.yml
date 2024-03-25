@@ -1,4 +1,4 @@
-name: Example Workflow
+name: Upload to S3
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  example_job:
+  upload_to_s3:
     runs-on: ubuntu-latest
 
     steps:
@@ -18,8 +18,8 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1
+          aws-region: your-aws-region
 
-      # Now you can use AWS CLI or other AWS SDKs in your workflow steps
-      - name: List S3 buckets
-        run: aws s3 ls
+
+      - name: Upload files to S3
+        run: aws s3 sync .$GITHUB_WORKSPACE s3://my-web-bucket-01 --delete
