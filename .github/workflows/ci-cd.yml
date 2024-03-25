@@ -1,18 +1,31 @@
-name: Print Repository Sources Path
-
+name: Deploy to S3
 on:
   push:
     branches:
       - main
 
 jobs:
-  print_path:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Print Repository Sources Path
+      - name: Install AWS CLI
         run: |
-          echo "Repository sources path: $GITHUB_WORKSPACE"
+          sudo apt-get update
+          sudo apt-get install -y awscli
+
+      - name: Build website
+        run: |
+          # Replace this with your build command, if needed
+          echo "Building website..."
+
+      - name: Deploy to S3
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          REPO_PATH: ${{ secrets.REPO_PATH }}
+        run: |
+          aws s3 sync ${REPO_PATH} s3://my-web-bucket-01 --delete
