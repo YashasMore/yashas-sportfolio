@@ -1,4 +1,4 @@
-name: Hello World
+name: Print Repository Sources Path
 
 on:
   push:
@@ -6,17 +6,13 @@ on:
       - main
 
 jobs:
-  build:
+  print_path:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Say Hello
-        run: echo "Hello, World 3!"
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-      - name: Deploy to S3
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      - name: Print Repository Sources Path
         run: |
-          echo "Secret value: $AWS_ACCESS_KEY_ID"
-          echo "Secret value key: $AWS_SECRET_ACCESS_KEY"
+          echo "Repository sources path: $GITHUB_WORKSPACE"
